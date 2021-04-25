@@ -1,0 +1,43 @@
+type Chain struct {
+ ChainId             *uint64 `gorm:"primaryKey;type:bigint(20);not null"`
+ Height              uint64  `gorm:"type:bigint(20);not null"`
+ HeightSwap          uint64  `gorm:"type:bigint(20);not null"`
+ BackwardBlockNumber uint64  `gorm:"type:bigint(20);not null"`
+}
+
+type SrcTransaction struct {
+ Hash        string       `gorm:"primaryKey;size:66;not null"`
+ ChainId     uint64       `gorm:"type:bigint(20);not null"`
+ State       uint64       `gorm:"type:bigint(20);not null"`
+ Standard    uint8        `gorm:"type:int(8);not null"`
+ Time        uint64       `gorm:"type:bigint(20);not null"`
+ Fee         *BigInt      `gorm:"type:varchar(64);not null"`
+ Height      uint64       `gorm:"type:bigint(20);not null"`
+ User        string       `gorm:"type:varchar(66);not null"`
+ DstChainId  uint64       `gorm:"type:bigint(20);not null"`
+ Contract    string       `gorm:"type:varchar(66);not null"`
+ Key         string       `gorm:"type:varchar(8192);not null"`
+ Param       string       `gorm:"type:varchar(8192);not null"`
+ SrcTransfer *SrcTransfer `gorm:"foreignKey:TxHash;references:Hash"`
+ SrcSwap     *SrcSwap     `gorm:"foreignKey:TxHash;references:Hash"`
+}
+
+type SrcTransfer struct {
+ TxHash     string  `gorm:"primaryKey;size:66;not null"`
+ ChainId    uint64  `gorm:"type:bigint(20);not null"`
+ Time       uint64  `gorm:"type:bigint(20);not null"`
+ Standard    uint8        `gorm:"type:int(8);not null"`
+ Asset      string  `gorm:"type:varchar(66);not null"`
+ From       string  `gorm:"type:varchar(66);not null"`
+ To         string  `gorm:"type:varchar(66);not null"`
+ Amount     *BigInt `gorm:"type:varchar(64);not null"`
+ DstChainId uint64  `gorm:"type:bigint(20);not null"`
+ DstAsset   string  `gorm:"type:varchar(66);not null"`
+ DstUser    string  `gorm:"type:varchar(66);not null"`
+}
+
+type SrcSwap struct {
+ TxHash     string  `gorm:"primaryKey;size:66;not null"`
+ ChainId    uint64  `gorm:"type:bigint(20);not null"`
+ Time       uint64  `gorm:"type:bigint(20);not null"`
+ Asset      string  `gorm:"type:varchar(66)
