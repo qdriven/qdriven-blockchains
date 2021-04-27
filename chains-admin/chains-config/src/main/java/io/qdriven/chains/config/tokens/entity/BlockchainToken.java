@@ -22,7 +22,7 @@ public class BlockchainToken extends HyperModel {
     private String symbol;
     @EruptField(
             views = @View(title = "decimal"),
-            edit = @Edit(title = "decimalValue") //相当于 type = EditType.INPUT
+            edit = @Edit(title = "decimal") //相当于 type = EditType.INPUT
     )
     private String decimalValue;
     @EruptField(
@@ -32,7 +32,7 @@ public class BlockchainToken extends HyperModel {
     private String name;
     @EruptField(
             views = @View(title = "协议名"),
-            edit = @Edit(title = "协议") //相当于 type = EditType.INPUT
+            edit = @Edit(title = "协议名") //相当于 type = EditType.INPUT
     )
     private String protocolName;
     @EruptField(
