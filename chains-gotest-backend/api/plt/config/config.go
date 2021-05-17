@@ -1,13 +1,13 @@
 package config
 
 import (
+	"chains-gotest-backend/api/plt/pkg/encode"
+	"chains-gotest-backend/api/plt/pkg/files"
+	"chains-gotest-backend/api/plt/pkg/sdk"
 	"crypto/ecdsa"
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"gin-vue-admin/chain/pkg/encode"
-	"gin-vue-admin/chain/pkg/files"
-	"gin-vue-admin/chain/pkg/sdk"
 	"github.com/ethereum/go-ethereum/accounts/keystore"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"

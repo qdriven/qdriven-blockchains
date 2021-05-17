@@ -1,9 +1,9 @@
 package model
 
-import "gin-vue-admin/global"
+import "chains-gotest-backend/global"
 
 type ChainMetaData struct {
-	global.GVA_MODEL
+	global.BaseModel
 	ChainName string
 	ChainId   string
 	ChainType string //mainnet/testnet
@@ -11,7 +11,7 @@ type ChainMetaData struct {
 }
 
 type EvmTransactionRecord struct {
-	global.GVA_MODEL
+	global.BaseModel
 	FromChainId string
 	ToChainId   string
 	AssetHash   string //mainnet/testnet
@@ -20,7 +20,7 @@ type EvmTransactionRecord struct {
 }
 
 type CoinMetaData struct {
-	global.GVA_MODEL
+	global.BaseModel
 	ChainName string
 	ChainId   string
 	ChainType string //mainnet/testnet
@@ -32,7 +32,7 @@ type CoinMetaData struct {
 }
 
 type CrossChainLockProxy struct {
-	global.GVA_MODEL
+	global.BaseModel
 	ChainId          string
 	ChainName        string
 	ChainType        string
@@ -41,7 +41,7 @@ type CrossChainLockProxy struct {
 }
 
 type CrossChainAssetMapping struct {
-	global.GVA_MODEL
+	global.BaseModel
 	LockProxyAddress string
 	FromAssetHash    string
 	ToAssetHash      string
@@ -50,7 +50,7 @@ type CrossChainAssetMapping struct {
 }
 
 type CrossChainProxyHashMap struct {
-	global.GVA_MODEL
+	global.BaseModel
 	LockProxyAddress string
 	ToProxyHash      string
 	ToChainId        uint

@@ -1,6 +1,6 @@
 package initialize
 
-import "gin-vue-admin/utils"
+import "chains-gotest-backend/utils"
 
 func init() {
 	_ = utils.RegisterRule("PageVerify",

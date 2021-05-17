@@ -1,15 +1,14 @@
 package initialize
 
 import (
-	"gin-vue-admin/global"
-	"gin-vue-admin/initialize/internal"
-	"gin-vue-admin/model"
-	"os"
-
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/initialize/internal"
+	"chains-gotest-backend/model"
 	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
+	"os"
 )
 
 //@author: SliverHorn

@@ -1,8 +1,9 @@
 package jobs
 
 import (
+	"chains-gotest-backend/api/evm/log"
 	"github.com/go-resty/resty/v2"
-	"go-chains/chains/log"
+
 	"time"
 )
 

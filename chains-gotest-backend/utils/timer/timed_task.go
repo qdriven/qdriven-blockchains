@@ -1,11 +1,13 @@
 package timer
 
 import (
-	"sync"
-
 	"github.com/robfig/cron/v3"
+	"sync"
 )
 
+/**
+For Cron Job Tasks
+*/
 type Timer interface {
 	AddTaskByFunc(taskName string, spec string, task func()) (cron.EntryID, error)
 	AddTaskByJob(taskName string, spec string, job interface{ Run() }) (cron.EntryID, error)

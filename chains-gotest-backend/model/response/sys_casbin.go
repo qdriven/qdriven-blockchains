@@ -1,6 +1,6 @@
 package response
 
-import "gin-vue-admin/model/request"
+import "chains-gotest-backend/model/request"
 
 type PolicyPathResponse struct {
 	Paths []request.CasbinInfo `json:"paths"`

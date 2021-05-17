@@ -1,8 +1,8 @@
 package upload
 
 import (
+	"chains-gotest-backend/global"
 	"errors"
-	"gin-vue-admin/global"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"go.uber.org/zap"
 	"mime/multipart"

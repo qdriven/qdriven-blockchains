@@ -1,7 +1,7 @@
 package service
 
 import (
-	"gin-vue-admin/utils"
+	"chains-gotest-backend/utils"
 )
 
 //@author: [maplepie](https://github.com/maplepie)

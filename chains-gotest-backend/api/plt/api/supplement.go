@@ -1,12 +1,12 @@
 package api
 
 import (
-	"gin-vue-admin/chain/config"
-	"gin-vue-admin/chain/core"
-	"gin-vue-admin/chain/model"
-	"gin-vue-admin/chain/pkg/hdwallet"
-	"gin-vue-admin/chain/pkg/sdk"
-	"gin-vue-admin/global"
+	"chains-gotest-backend/api/plt/config"
+	"chains-gotest-backend/api/plt/core"
+	"chains-gotest-backend/api/plt/model"
+	"chains-gotest-backend/api/plt/pkg/hdwallet"
+	"chains-gotest-backend/api/plt/pkg/sdk"
+	"chains-gotest-backend/global"
 	"github.com/ethereum/go-ethereum/common"
 	"strings"
 )

@@ -1,13 +1,13 @@
 package api
 
 import (
+	"chains-gotest-backend/api/evm/api/validator"
+	"chains-gotest-backend/api/evm/models"
+	"chains-gotest-backend/api/evm/service"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model/response"
+	"chains-gotest-backend/utils"
 	"github.com/gin-gonic/gin"
-	"go-chains/chains/api/validator"
-	"go-chains/chains/models"
-	"go-chains/chains/service"
-	"go-chains/global"
-	"go-chains/model/response"
-	"go-chains/utils"
 	"go.uber.org/zap"
 )
 

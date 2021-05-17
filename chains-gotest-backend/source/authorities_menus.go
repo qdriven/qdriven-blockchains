@@ -1,7 +1,7 @@
 package source
 
 import (
-	"gin-vue-admin/global"
+	"chains-gotest-backend/global"
 	"github.com/gookit/color"
 	"gorm.io/gorm"
 )

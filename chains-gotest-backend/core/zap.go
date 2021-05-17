@@ -1,15 +1,18 @@
 package core
 
 import (
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/utils"
 	"fmt"
-	"gin-vue-admin/global"
-	"gin-vue-admin/utils"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"
 	"time"
 )
 
+/**
+Zap Log Configuration
+ */
 var level zapcore.Level
 
 func Zap() (logger *zap.Logger) {

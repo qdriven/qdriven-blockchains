@@ -1,7 +1,7 @@
 package core
 
 import (
-	"gin-vue-admin/chain/config"
+	"chains-gotest-backend/api/plt/config"
 	"time"
 )
 

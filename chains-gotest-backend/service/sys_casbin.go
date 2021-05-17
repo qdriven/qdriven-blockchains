@@ -1,12 +1,11 @@
 package service
 
 import (
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model"
+	"chains-gotest-backend/model/request"
 	"errors"
-	"gin-vue-admin/global"
-	"gin-vue-admin/model"
-	"gin-vue-admin/model/request"
 	"strings"
-
 	"github.com/casbin/casbin/v2"
 	"github.com/casbin/casbin/v2/util"
 	gormadapter "github.com/casbin/gorm-adapter/v3"

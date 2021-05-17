@@ -1,9 +1,9 @@
 package core
 
 import (
-	"gin-vue-admin/chain/config"
-	"gin-vue-admin/chain/pkg/log"
-	"gin-vue-admin/chain/pkg/sdk"
+	"chains-gotest-backend/api/plt/config"
+	"chains-gotest-backend/api/plt/pkg/log"
+	"chains-gotest-backend/api/plt/pkg/sdk"
 	"github.com/ethereum/go-ethereum/contracts/native/governance"
 	"github.com/ethereum/go-ethereum/contracts/native/plt"
 	"github.com/ethereum/go-ethereum/contracts/native/utils"

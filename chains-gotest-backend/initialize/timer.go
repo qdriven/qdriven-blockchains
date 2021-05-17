@@ -1,10 +1,10 @@
 package initialize
 
 import (
+	"chains-gotest-backend/config"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/utils"
 	"fmt"
-	"gin-vue-admin/config"
-	"gin-vue-admin/global"
-	"gin-vue-admin/utils"
 )
 
 func Timer() {

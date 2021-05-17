@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"gin-vue-admin/global"
-	"gin-vue-admin/model/response"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model/response"
 	"github.com/gin-gonic/gin"
 )
 

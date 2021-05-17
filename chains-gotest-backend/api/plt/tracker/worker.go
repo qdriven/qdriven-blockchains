@@ -1,9 +1,9 @@
 package tracker
 
 import (
-	"gin-vue-admin/chain/core"
-	"gin-vue-admin/chain/pkg/log"
-	"gin-vue-admin/global"
+	"chains-gotest-backend/api/evm/log"
+	"chains-gotest-backend/api/plt/core"
+	"chains-gotest-backend/global"
 )
 
 //TODO: Pass functions and table name to do the same thing

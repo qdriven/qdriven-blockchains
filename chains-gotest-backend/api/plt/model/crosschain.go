@@ -1,9 +1,9 @@
 package model
 
-import "gin-vue-admin/global"
+import "chains-gotest-backend/global"
 
 type CrossChainTx struct {
-	global.GVA_MODEL
+	global.BaseModel
 	FromChain   string
 	FromAddress string
 	ToAddress   string

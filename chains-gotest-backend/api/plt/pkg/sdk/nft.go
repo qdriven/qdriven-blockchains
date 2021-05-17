@@ -5,7 +5,6 @@ import (
 	"context"
 	"encoding/hex"
 	"fmt"
-	"gin-vue-admin/chain/pkg/log"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
@@ -18,6 +17,7 @@ import (
 	polycm "github.com/polynetwork/poly/common"
 	"math/big"
 	"time"
+	"chains-gotest-backend/api/plt/pkg/log"
 )
 
 var (

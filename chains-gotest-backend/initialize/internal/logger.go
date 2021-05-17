@@ -1,9 +1,9 @@
 package internal
 
 import (
+	"chains-gotest-backend/global"
 	"context"
 	"fmt"
-	"gin-vue-admin/global"
 	"go.uber.org/zap"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/utils"

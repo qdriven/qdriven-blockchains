@@ -1,9 +1,9 @@
 package service
 
 import (
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model"
 	"errors"
-	"gin-vue-admin/global"
-	"gin-vue-admin/model"
 	"gorm.io/gorm"
 )
 

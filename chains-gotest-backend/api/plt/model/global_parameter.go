@@ -1,9 +1,9 @@
 package model
 
-import "gin-vue-admin/global"
+import "chains-gotest-backend/global"
 
 type GlobalParameter struct {
-	global.GVA_MODEL
+	global.BaseModel
 	CurrentBlockNo    string
 	NftGasPriceInPlt  string
 	NftMintPriceInPlt string

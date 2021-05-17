@@ -1,10 +1,10 @@
 package initializer
 
 import (
-	"go-chains/chains/models"
-	"go-chains/core"
-	"go-chains/global"
-	"go-chains/initialize"
+	"chains-gotest-backend/api/evm/models"
+	"chains-gotest-backend/core"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/initialize"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
 	"os"

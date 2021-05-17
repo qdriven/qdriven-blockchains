@@ -1,9 +1,9 @@
 package upload
 
 import (
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/utils"
 	"errors"
-	"gin-vue-admin/global"
-	"gin-vue-admin/utils"
 	"go.uber.org/zap"
 	"io"
 	"mime/multipart"

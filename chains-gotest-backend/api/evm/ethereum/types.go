@@ -1,14 +1,13 @@
 package ethereum
 
 import (
+	"chains-gotest-backend/api/evm/ethereum/decimal"
 	"crypto/sha256"
 	"encoding/binary"
-	"go-chains/chains/ethereum/decimal"
-	"math/big"
-
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/math"
 	emath "github.com/ethereum/go-ethereum/common/math"
+	"math/big"
 )
 
 var (

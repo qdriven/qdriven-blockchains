@@ -1,10 +1,10 @@
 package api
 
 import (
-	"gin-vue-admin/chain/pkg/log"
-	"gin-vue-admin/chain/service"
-	"gin-vue-admin/global"
-	"gin-vue-admin/model/response"
+	"chains-gotest-backend/api/plt/pkg/log"
+	"chains-gotest-backend/api/plt/service"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model/response"
 	"github.com/ethereum/go-ethereum/contracts/native/plt"
 	"github.com/ethereum/go-ethereum/contracts/native/utils"
 	"github.com/ethereum/go-ethereum/contracts/native/utils/decimal"

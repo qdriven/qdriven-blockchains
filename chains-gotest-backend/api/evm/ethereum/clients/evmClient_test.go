@@ -1,9 +1,9 @@
 package clients
 
 import (
+	"chains-gotest-backend/api/evm/log"
 	"fmt"
 	"github.com/ethereum/go-ethereum/crypto"
-	"go-chains/chains/log"
 	"golang.org/x/net/context"
 	"strings"
 	"testing"

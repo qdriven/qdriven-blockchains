@@ -1,10 +1,10 @@
 package upload
 
 import (
+	"chains-gotest-backend/global"
 	"context"
 	"errors"
 	"fmt"
-	"gin-vue-admin/global"
 	"github.com/qiniu/api.v7/v7/auth/qbox"
 	"github.com/qiniu/api.v7/v7/storage"
 	"go.uber.org/zap"

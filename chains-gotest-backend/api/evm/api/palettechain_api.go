@@ -1,15 +1,16 @@
 package api
 
 import (
+	"chains-gotest-backend/api/evm/ethereum/clients"
+	"chains-gotest-backend/api/evm/log"
+	"chains-gotest-backend/model/response"
 	"context"
 	"fmt"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/gin-gonic/gin"
-	"go-chains/chains/ethereum/clients"
-	"go-chains/chains/log"
-	"go-chains/model/response"
 )
+
 
 //api generation by abi json
 //template for invocation

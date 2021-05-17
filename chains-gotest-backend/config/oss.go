@@ -2,6 +2,7 @@ package config
 
 type Local struct {
 	Path string `mapstructure:"path" json:"path" yaml:"path"` // 本地文件路径
+	TestConfig string `mapstructure:"testConfig" json:"testConfig" yaml:"testConfig" `
 }
 
 type Qiniu struct {

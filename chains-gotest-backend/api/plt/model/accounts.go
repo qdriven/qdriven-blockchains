@@ -1,11 +1,11 @@
 package model
 
 import (
-	"gin-vue-admin/global"
+	"chains-gotest-backend/global"
 )
 
 type TestAccount struct {
-	global.GVA_MODEL
+	global.BaseModel
 	Address        string
 	AccIndex       int
 	DerivationPath string
@@ -14,7 +14,7 @@ type TestAccount struct {
 }
 
 type TestAccountBalance struct {
-	global.GVA_MODEL
+	global.BaseModel
 	Address         string
 	Balance         uint64
 	CurrentBlockNum int

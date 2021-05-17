@@ -1,6 +1,7 @@
 package clients
 
 import (
+	"chains-gotest-backend/api/evm/log"
 	"context"
 	"crypto/ecdsa"
 	"encoding/hex"
@@ -15,7 +16,6 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/rlp"
 	"github.com/ethereum/go-ethereum/rpc"
-	"go-chains/chains/log"
 	"math/big"
 	"strings"
 	"time"
@@ -397,4 +397,3 @@ func (c *EvmClient) WaitTransactionConfirm(hash common.Hash) {
 	}
 
 }
-

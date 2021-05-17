@@ -1,15 +1,15 @@
 package clients
 
 import (
+	"chains-gotest-backend/api/evm/evm/binding/poly/eccd_abi"
+	"chains-gotest-backend/api/evm/evm/binding/poly/eccm_abi"
+	"chains-gotest-backend/api/evm/evm/binding/poly/eccmp_abi"
+	"chains-gotest-backend/api/evm/evm/binding/poly/erc20_abi"
+	"chains-gotest-backend/api/evm/evm/binding/poly/oep4_abi"
+	"chains-gotest-backend/api/evm/log"
+	"chains-gotest-backend/api/evm/utils"
 	"fmt"
 	"github.com/ethereum/go-ethereum/common"
-	"go-chains/chains/evm/binding/poly/eccd_abi"
-	"go-chains/chains/evm/binding/poly/eccm_abi"
-	"go-chains/chains/evm/binding/poly/eccmp_abi"
-	"go-chains/chains/evm/binding/poly/erc20_abi"
-	"go-chains/chains/evm/binding/poly/oep4_abi"
-	"go-chains/chains/log"
-	"go-chains/chains/utils"
 	"math/big"
 )
 

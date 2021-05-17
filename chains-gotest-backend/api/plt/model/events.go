@@ -1,11 +1,11 @@
 package model
 
 import (
-	"gin-vue-admin/global"
+	"chains-gotest-backend/global"
 )
 
 type RewardEvent struct {
-	global.GVA_MODEL
+	global.BaseModel
 	EventName       string
 	ContractAddress string
 	Amount          string
@@ -13,7 +13,7 @@ type RewardEvent struct {
 }
 //staking history to track staking events
 type StakingEvent struct {
-	global.GVA_MODEL
+	global.BaseModel
 	Contract string
 	CurrentBlockHeight uint64
 	EventName string
@@ -27,7 +27,7 @@ type StakingEvent struct {
 }
 
 type NFTEvent struct {
-	global.GVA_MODEL
+	global.BaseModel
 	EventName          string
 	ContractAddress    string
 	BlockHeight        uint64
@@ -43,7 +43,7 @@ type NFTEvent struct {
 }
 
 type PLTTransferEvent struct {
-	global.GVA_MODEL
+	global.BaseModel
 	EventName   string
 	Contract    string
 	BlockHeight uint64
@@ -54,7 +54,7 @@ type PLTTransferEvent struct {
 }
 
 type PLTApprovalEvent struct {
-	global.GVA_MODEL
+	global.BaseModel
 	EventName   string
 	Contract    string
 	BlockHeight uint64

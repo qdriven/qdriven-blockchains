@@ -1,10 +1,9 @@
 package initialize
 
 import (
-	_ "gin-vue-admin/docs"
-	"gin-vue-admin/global"
-	"gin-vue-admin/middleware"
-	"gin-vue-admin/router"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/middleware"
+	"chains-gotest-backend/router"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

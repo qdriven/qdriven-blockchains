@@ -1,9 +1,9 @@
 package model
 
-import "gin-vue-admin/global"
+import "chains-gotest-backend/global"
 
 type PaletteNode struct {
-	global.GVA_MODEL
+	global.BaseModel
 	NodeAddress    string
 	StakeAmount  string
 	CurrentBlockNum string

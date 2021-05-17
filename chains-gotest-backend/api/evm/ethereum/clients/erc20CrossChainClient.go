@@ -1,13 +1,14 @@
 package clients
 
 import (
+	"chains-gotest-backend/api/evm/evm/binding/poly/lock_proxy_abi"
+	"chains-gotest-backend/api/evm/log"
+	"chains-gotest-backend/api/evm/models"
+	"chains-gotest-backend/api/evm/utils"
+	"chains-gotest-backend/global"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
-	"go-chains/chains/evm/binding/poly/lock_proxy_abi"
-	"go-chains/chains/log"
-	"go-chains/chains/models"
-	"go-chains/chains/utils"
-	"go-chains/global"
+
 )
 
 type CrossChainRequestContext struct {

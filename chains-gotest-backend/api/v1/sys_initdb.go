@@ -1,10 +1,10 @@
 package v1
 
 import (
-	"gin-vue-admin/global"
-	"gin-vue-admin/model/request"
-	"gin-vue-admin/model/response"
-	"gin-vue-admin/service"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model/request"
+	"chains-gotest-backend/model/response"
+	"chains-gotest-backend/service"
 	"go.uber.org/zap"
 
 	"github.com/gin-gonic/gin"

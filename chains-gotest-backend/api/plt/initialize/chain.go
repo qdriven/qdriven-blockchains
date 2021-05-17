@@ -1,11 +1,11 @@
 package initialize
 
 import (
-	"gin-vue-admin/chain/config"
-	"gin-vue-admin/chain/core"
-	chainData "gin-vue-admin/chain/model"
-	"gin-vue-admin/chain/pkg/log"
-	"gin-vue-admin/global"
+	"chains-gotest-backend/api/plt/config"
+	"chains-gotest-backend/api/plt/core"
+	chainData "chains-gotest-backend/api/plt/model"
+	"chains-gotest-backend/api/plt/pkg/log"
+	"chains-gotest-backend/global"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
 	"math/rand"

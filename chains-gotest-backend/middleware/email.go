@@ -1,11 +1,11 @@
 package middleware
 
 import (
-	"gin-vue-admin/global"
-	"gin-vue-admin/model"
-	"gin-vue-admin/model/request"
-	"gin-vue-admin/service"
-	"gin-vue-admin/utils"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model"
+	"chains-gotest-backend/model/request"
+	"chains-gotest-backend/service"
+	"chains-gotest-backend/utils"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 	"io/ioutil"

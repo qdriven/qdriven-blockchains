@@ -1,6 +1,6 @@
 package request
 
-import "gin-vue-admin/model"
+import "chains-gotest-backend/model"
 
 type SysDictionarySearch struct {
 	model.SysDictionary

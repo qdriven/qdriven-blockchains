@@ -1,9 +1,9 @@
 package service
 
 import (
-	"gin-vue-admin/global"
-	"gin-vue-admin/model"
-	"gin-vue-admin/model/request"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model"
+	"chains-gotest-backend/model/request"
 )
 
 //@author: [granty1](https://github.com/granty1)

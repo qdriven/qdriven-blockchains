@@ -1,8 +1,8 @@
 package api
 
 import (
+	"chains-gotest-backend/api/evm/log"
 	"fmt"
-	"go-chains/chains/log"
 	"testing"
 )
 

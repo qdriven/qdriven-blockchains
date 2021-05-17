@@ -1,10 +1,10 @@
 package service
 
 import (
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model"
 	"errors"
 	"fmt"
-	"gin-vue-admin/global"
-	"gin-vue-admin/model"
 	"github.com/360EntSecGroup-Skylar/excelize/v2"
 	"strconv"
 )
@@ -60,7 +60,7 @@ func ParseExcel2InfoList() ([]model.SysBaseMenu, error) {
 		hidden, _ := strconv.ParseBool(row[3])
 		sort, _ := strconv.Atoi(row[5])
 		menu := model.SysBaseMenu{
-			GVA_MODEL: global.GVA_MODEL{
+			BaseModel: global.BaseModel{
 				ID: uint(id),
 			},
 			Name:      row[1],

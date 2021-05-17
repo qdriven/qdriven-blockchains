@@ -1,7 +1,7 @@
 package router
 
 import (
-	"gin-vue-admin/api/v1"
+	v1 "chains-gotest-backend/api/v1"
 	"github.com/gin-gonic/gin"
 )
 

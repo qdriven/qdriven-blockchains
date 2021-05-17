@@ -10,7 +10,7 @@ jwt:
 zap:
   level: 'info'
   format: 'console'
-  prefix: '[GIN-VUE-ADMIN]'
+  prefix: '[chains-gotest-chains]'
   director: 'log'
   link-name: 'latest_log'
   show-line: true

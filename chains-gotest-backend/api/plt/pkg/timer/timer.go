@@ -1,7 +1,7 @@
 package timer
 
 import (
-	"gin-vue-admin/chain/pkg/log"
+	"chains-gotest-backend/api/plt/pkg/log"
 	"sync"
 	"time"
 )

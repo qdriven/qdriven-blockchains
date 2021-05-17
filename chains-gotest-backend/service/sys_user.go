@@ -1,11 +1,11 @@
 package service
 
 import (
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model"
+	"chains-gotest-backend/model/request"
+	"chains-gotest-backend/utils"
 	"errors"
-	"gin-vue-admin/global"
-	"gin-vue-admin/model"
-	"gin-vue-admin/model/request"
-	"gin-vue-admin/utils"
 	uuid "github.com/satori/go.uuid"
 	"gorm.io/gorm"
 )

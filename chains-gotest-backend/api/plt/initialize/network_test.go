@@ -1,11 +1,11 @@
 package initialize
 
 import (
-	"gin-vue-admin/chain/api"
-	"gin-vue-admin/chain/tracker"
-	"gin-vue-admin/core"
-	"gin-vue-admin/global"
-	"gin-vue-admin/initialize"
+	"chains-gotest-backend/api/plt/api"
+	"chains-gotest-backend/api/plt/tracker"
+	"chains-gotest-backend/core"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/initialize"
 	"testing"
 )
 

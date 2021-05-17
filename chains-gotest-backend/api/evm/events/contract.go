@@ -1,9 +1,9 @@
 package events
 
 import (
+	"chains-gotest-backend/api/evm/log"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
-	"go-chains/chains/log"
 	"strings"
 )
 
@@ -50,7 +50,7 @@ func NewContract(name string, abiJSON string, address common.Address) (*Contract
 	}
 	c.ABI = abi
 	for _, event := range abi.Events {
-		c.events[event.ID] = event.Name
+		c.events[event.ID()] = event.Name
 	}
 	return c, nil
 }

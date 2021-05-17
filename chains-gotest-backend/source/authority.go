@@ -1,8 +1,8 @@
 package source
 
 import (
-	"gin-vue-admin/global"
-	"gin-vue-admin/model"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model"
 	"github.com/gookit/color"
 	"time"
 

@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"gin-vue-admin/global"
+	"chains-gotest-backend/global"
 	"go.uber.org/zap"
 	"os"
 )

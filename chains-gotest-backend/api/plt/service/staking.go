@@ -1,8 +1,8 @@
 package service
 
 import (
-	"gin-vue-admin/chain/core"
-	"gin-vue-admin/chain/pkg/log"
+	"chains-gotest-backend/api/plt/core"
+	"chains-gotest-backend/api/plt/pkg/log"
 )
 
 type ValidatorStaking struct {

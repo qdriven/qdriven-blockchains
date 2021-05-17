@@ -1,11 +1,12 @@
 package clients
 
 import (
+	"chains-gotest-backend/api/evm/evm/binding/erc20"
+	"chains-gotest-backend/api/evm/evm/binding/poly/erc20_abi"
+	"chains-gotest-backend/api/evm/log"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
-	"go-chains/chains/evm/binding/erc20"
-	"go-chains/chains/evm/binding/poly/erc20_abi"
-	"go-chains/chains/log"
+
 	"math/big"
 )
 

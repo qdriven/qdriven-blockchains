@@ -11,6 +11,10 @@
     <modules>
         <module>admin-server</module>
         <module>chains-config</module>
+        <module>runner-admin</module>
+        <module>runner-compound</module>
+        <module>runner-configs</module>
+        <module>runner-support</module>
     </modules>
 
     <properties>

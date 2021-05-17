@@ -1,13 +1,13 @@
 package v1
 
 import (
-	"gin-vue-admin/global"
-	"gin-vue-admin/middleware"
-	"gin-vue-admin/model"
-	"gin-vue-admin/model/request"
-	"gin-vue-admin/model/response"
-	"gin-vue-admin/service"
-	"gin-vue-admin/utils"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/middleware"
+	"chains-gotest-backend/model"
+	"chains-gotest-backend/model/request"
+	"chains-gotest-backend/model/response"
+	"chains-gotest-backend/service"
+	"chains-gotest-backend/utils"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"

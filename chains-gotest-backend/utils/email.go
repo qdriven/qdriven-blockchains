@@ -1,13 +1,11 @@
 package utils
 
 import (
+	"chains-gotest-backend/global"
 	"crypto/tls"
 	"fmt"
 	"net/smtp"
 	"strings"
-
-	"gin-vue-admin/global"
-
 	"github.com/jordan-wright/email"
 )
 

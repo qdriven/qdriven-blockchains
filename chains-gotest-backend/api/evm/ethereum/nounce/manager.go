@@ -1,10 +1,10 @@
 package nounce
 
 import (
+	"chains-gotest-backend/api/evm/log"
 	"context"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
-	"go-chains/chains/log"
 	"sync"
 	"time"
 )

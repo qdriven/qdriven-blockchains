@@ -1,17 +1,21 @@
 package core
 
 import (
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/initialize"
 	"fmt"
-	"gin-vue-admin/global"
-	"gin-vue-admin/initialize"
 	"go.uber.org/zap"
 	"time"
 )
-
+/**
+Init Linux Server
+ */
 type server interface {
 	ListenAndServe() error
 }
-
+/**
+Init Windows Server
+ */
 func RunWindowsServer() {
 	if global.GVA_CONFIG.System.UseMultipoint {
 		// 初始化redis服务
@@ -28,12 +32,7 @@ func RunWindowsServer() {
 	global.GVA_LOG.Info("server run success on ", zap.String("address", address))
 
 	fmt.Printf(`
-	欢迎使用 Gin-Vue-Admin
-	当前版本:V2.4.1
-    加群方式:微信号：shouzi_1994 QQ群：622360840
-	默认自动化文档地址:http://127.0.0.1%s/swagger/index.html
-	默认前端文件运行地址:http://127.0.0.1:8080
-	如果项目让您获得了收益，希望您能请团队喝杯可乐:https://www.gin-vue-admin.com/docs/coffee
+	Welcome to User Go-Chains Server for easy testing
 `, address)
 	global.GVA_LOG.Error(s.ListenAndServe().Error())
 }

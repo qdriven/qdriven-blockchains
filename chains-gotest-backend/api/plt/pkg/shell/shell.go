@@ -2,8 +2,8 @@ package shell
 
 import (
 	"bytes"
-	"gin-vue-admin/chain/config"
-	"gin-vue-admin/chain/pkg/log"
+	"chains-gotest-backend/api/plt/config"
+	"chains-gotest-backend/api/plt/pkg/log"
 	"io"
 	"os"
 	"os/exec"

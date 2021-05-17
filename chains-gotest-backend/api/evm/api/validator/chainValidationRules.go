@@ -1,7 +1,7 @@
 package validator
 
 import (
-	utils "go-chains/utils"
+	"chains-gotest-backend/utils"
 )
 
 var (

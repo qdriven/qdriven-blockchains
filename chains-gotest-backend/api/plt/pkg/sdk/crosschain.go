@@ -1,17 +1,18 @@
 package sdk
 
 import (
+	"chains-gotest-backend/api/evm/evm/binding/plttoken/nftlp"
+	"chains-gotest-backend/api/evm/evm/binding/poly/eccd_abi"
+	"chains-gotest-backend/api/evm/evm/binding/poly/eccm_abi"
+	"chains-gotest-backend/api/evm/evm/binding/poly/eccmp_abi"
+	"chains-gotest-backend/api/evm/evm/binding/poly/lock_proxy_abi"
 	"fmt"
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/contracts/native/plt"
 	"github.com/ethereum/go-ethereum/contracts/native/utils"
-	"github.com/polynetwork/eth-contracts/go_abi/eccd_abi"
-	"github.com/polynetwork/eth-contracts/go_abi/eccm_abi"
-	"github.com/polynetwork/eth-contracts/go_abi/eccmp_abi"
-	"github.com/polynetwork/eth-contracts/go_abi/lock_proxy_abi"
-	"github.com/polynetwork/eth-contracts/go_abi/nftlp"
+
 )
 
 func (c *Client) DeployECCD() (common.Address, error) {
@@ -26,7 +27,8 @@ func (c *Client) DeployECCD() (common.Address, error) {
 
 func (c *Client) DeployECCM(eccd common.Address, sideChainID uint64) (common.Address, error) {
 	auth := c.makeDeployAuth()
-	addr, tx, _, err := eccm_abi.DeployEthCrossChainManager(auth, c.backend, eccd, sideChainID)
+	//addr, tx, _, err := eccm_abi.DeployEthCrossChainManager(auth, c.backend, eccd, sideChainID)
+	addr, tx, _, err := eccm_abi.DeployEthCrossChainManager(auth, c.backend, eccd)
 	if err != nil {
 		return utils.EmptyAddress, err
 	}
@@ -230,7 +232,7 @@ func (c *Client) GetNFTBindAsset(localLockProxy, fromAsset common.Address, targe
 	return string(result), err
 }
 
-func (c *Client) GetNFTBindPorxy(localLockProxy common.Address, targetSideChainID uint64, ) (string, error) {
+func (c *Client) GetNFTBindProxy(localLockProxy common.Address, targetSideChainID uint64, ) (string, error) {
 
 	proxy, err := nftlp.NewNFTLockProxy(localLockProxy, c.backend)
 	if err != nil {

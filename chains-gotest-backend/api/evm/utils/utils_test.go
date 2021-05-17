@@ -7,10 +7,10 @@
 package utils
 
 import (
+	"chains-gotest-backend/api/evm/log"
 	"fmt"
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"
-	"go-chains/chains/log"
 	"math/big"
 	"strconv"
 	"testing"

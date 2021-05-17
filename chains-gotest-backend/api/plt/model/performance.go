@@ -1,11 +1,11 @@
 package model
 
 import (
-	"gin-vue-admin/global"
+	"chains-gotest-backend/global"
 )
 
 type PMetrics struct {
-	global.GVA_MODEL
+	global.BaseModel
 	TotalCount         uint64
 	TotalExecutionTime int
 	AvgTps             string

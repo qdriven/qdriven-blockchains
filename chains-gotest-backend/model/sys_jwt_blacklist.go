@@ -1,10 +1,10 @@
 package model
 
 import (
-	"gin-vue-admin/global"
+	"chains-gotest-backend/global"
 )
 
 type JwtBlacklist struct {
-	global.GVA_MODEL
+	global.BaseModel
 	Jwt string `gorm:"type:text;comment:jwt"`
 }

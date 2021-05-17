@@ -1,6 +1,6 @@
 package response
 
-import "gin-vue-admin/model"
+import "chains-gotest-backend/model"
 
 type SysMenusResponse struct {
 	Menus []model.SysMenu `json:"menus"`

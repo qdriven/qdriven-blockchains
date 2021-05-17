@@ -1,11 +1,11 @@
 package model
 
 import (
-	"gin-vue-admin/global"
+	"chains-gotest-backend/global"
 )
 
 type NftContract struct {
-	global.GVA_MODEL
+	global.BaseModel
 	TransactionHash         string
 	NFTContractAddress string
 	Status				uint64

@@ -1,13 +1,13 @@
 package v1
 
 import (
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model"
+	"chains-gotest-backend/model/response"
+	"chains-gotest-backend/service"
+	"chains-gotest-backend/utils"
 	"errors"
 	"fmt"
-	"gin-vue-admin/global"
-	"gin-vue-admin/model"
-	"gin-vue-admin/model/response"
-	"gin-vue-admin/service"
-	"gin-vue-admin/utils"
 	"net/url"
 	"os"
 

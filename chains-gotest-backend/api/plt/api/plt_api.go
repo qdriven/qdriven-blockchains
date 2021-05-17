@@ -1,13 +1,13 @@
 package api
 
 import (
-	response2 "gin-vue-admin/chain/api/response"
-	"gin-vue-admin/chain/config"
-	"gin-vue-admin/chain/core"
-	"gin-vue-admin/chain/model"
-	"gin-vue-admin/chain/pkg/log"
-	"gin-vue-admin/global"
-	"gin-vue-admin/model/response"
+	"chains-gotest-backend/api/evm/log"
+	response2 "chains-gotest-backend/api/plt/api/response"
+	"chains-gotest-backend/api/plt/config"
+	"chains-gotest-backend/api/plt/core"
+	"chains-gotest-backend/api/plt/model"
+	"chains-gotest-backend/global"
+	"chains-gotest-backend/model/response"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/contracts/native/plt"
 	"github.com/ethereum/go-ethereum/contracts/native/utils/decimal"
@@ -83,7 +83,7 @@ func PltSafeTransferFrom(ctx *gin.Context) {
 	request := &AccountTransferRequest{}
 	_ = ctx.ShouldBind(&request)
 	client := CreateNewClient(request.OwnerAddress)
-	balance, _ := client.PLTAllowance(client.Address(),common.HexToAddress(request.From), "latest")
+	balance, _ := client.PLTAllowance(client.Address(), common.HexToAddress(request.From), "latest")
 	log.Info("current balance is ", balance)
 	amount, _ := strconv.ParseFloat(request.Amount, 18)
 	log.Info("transfer amount is ", amount)

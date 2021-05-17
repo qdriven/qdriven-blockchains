@@ -1,7 +1,7 @@
 package response
 
 import (
-	"gin-vue-admin/model"
+	"chains-gotest-backend/model"
 )
 
 type SysUserResponse struct {

@@ -1,9 +1,10 @@
 package api
 
 import (
+	"chains-gotest-backend/api/evm/service"
+	"chains-gotest-backend/model/response"
 	"github.com/gin-gonic/gin"
-	"go-chains/chains/service"
-	"go-chains/model/response"
+
 )
 
 type TestCoinRequest struct {

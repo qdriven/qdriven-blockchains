@@ -1,17 +1,20 @@
 package global
 
 import (
-	"gin-vue-admin/utils/timer"
-
-	"go.uber.org/zap"
-
-	"gin-vue-admin/config"
-
+	"chains-gotest-backend/config"
+	"chains-gotest-backend/utils/timer"
 	"github.com/go-redis/redis"
 	"github.com/spf13/viper"
+	"go.uber.org/zap"
 	"gorm.io/gorm"
 )
-
+/**
+Global Parameters:
+1. REDIS
+2. DATABASE
+3. Viper Config
+4. Timer
+ */
 var (
 	GVA_DB     *gorm.DB
 	GVA_REDIS  *redis.Client

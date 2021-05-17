@@ -1,9 +1,9 @@
 package model
 
-import "gin-vue-admin/global"
+import "chains-gotest-backend/global"
 
 type ValidatorHistory struct {
-	global.GVA_MODEL
+	global.BaseModel
 	Validator          string
 	StackAccount       string
 	CurrentBlockHeight int64

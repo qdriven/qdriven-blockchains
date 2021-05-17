@@ -1,10 +1,10 @@
 package upload
 
 import (
+	"chains-gotest-backend/global"
 	"context"
 	"errors"
 	"fmt"
-	"gin-vue-admin/global"
 	"mime/multipart"
 	"net/http"
 	"net/url"
