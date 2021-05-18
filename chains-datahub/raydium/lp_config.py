@@ -5,6 +5,8 @@
 Author: Yefeng Wang
 Data scraping module to retrieve real-time Raydium liquidity pool information.
 """
+from aiohttp import ClientSession
+
 from raydium.resources.ids import STAKE_PROGRAM_ID
 from raydium.stake_config import *
 
@@ -34,7 +36,7 @@ class SolanaAPICall:
     JSON RPC API call async I/O rewrite.
     """
 
-    def __init__(self, endpoint, session):
+    def __init__(self, endpoint: str, session: ClientSession):
         self._endpoint = endpoint
         self._session = session
         self._request_counter = itertools.count()
@@ -75,35 +77,35 @@ class SolanaAPICall:
 
         return json.loads(result)
 
-    async def getTokenAccountBalance(self, publicKey: str, commitment: str = 'max'):
+    async def get_token_account_balance(self, public_key: str, commitment: str = 'max'):
         self._set_commitment(commitment)
         payload, header = self._add_payload("getTokenAccountBalance",
-                                            publicKey,
+                                            public_key,
                                             {"commitment": self._commitment})
         result = await self._make_request(payload, header)
         return result
 
-    async def getAccountInfo(self, publicKey: str, commitment: str = 'max', encoding: str = 'base64'):
+    async def get_account_info(self, public_key: str, commitment: str = 'max', encoding: str = 'base64'):
         self._set_commitment(commitment)
         self._set_encoding(encoding)
         payload, header = self._add_payload("getAccountInfo",
-                                            publicKey,
+                                            public_key,
                                             {"commitment": self._commitment,
                                              "encoding": self._encoding})
         result = await self._make_request(payload, header)
         return result
 
-    async def getTokenSupply(self, publicKey: str):
+    async def get_token_supply(self, public_key: str):
         payload, header = self._add_payload("getTokenSupply",
-                                            publicKey)
+                                            public_key)
         result = await self._make_request(payload, header)
         return result
 
-    async def getProgramAccounts(self, publicKey: str, commitment: str = 'max', encoding: str = 'base64'):
+    async def get_program_accounts(self, public_key: str, commitment: str = 'max', encoding: str = 'base64'):
         self._set_commitment(commitment)
         self._set_encoding(encoding)
         payload, header = self._add_payload("getProgramAccounts",
-                                            publicKey,
+                                            public_key,
                                             {
                                                 "commitment": self._commitment,
                                                 "encoding": self._encoding
@@ -261,10 +263,10 @@ class RaydiumPoolInfo:
         lp_account = self.LP_addresses[lp]['lp_mint_address']
 
         # Use API to read the data
-        coin_amount_data_task = asyncio.create_task(self.SOLANA.getTokenAccountBalance(coin_account))
-        pc_amount_data_task = asyncio.create_task(self.SOLANA.getTokenAccountBalance(pc_account))
-        lp_supply_task = asyncio.create_task(self.SOLANA.getTokenSupply(lp_account))
-        open_order_task = asyncio.create_task(self.SOLANA.getAccountInfo(amm_address))
+        coin_amount_data_task = asyncio.create_task(self.SOLANA.get_token_account_balance(coin_account))
+        pc_amount_data_task = asyncio.create_task(self.SOLANA.get_token_account_balance(pc_account))
+        lp_supply_task = asyncio.create_task(self.SOLANA.get_token_supply(lp_account))
+        open_order_task = asyncio.create_task(self.SOLANA.get_account_info(amm_address))
         coin_price_task = asyncio.create_task(self.RAYDIUM.get_price(coin))
         pc_price_task = asyncio.create_task(self.RAYDIUM.get_price(pc))
 
@@ -317,7 +319,7 @@ class RaydiumPoolInfo:
         # Grab reward per block
         pool_info = self.farms_info[farm]['poolId']
 
-        stake_info_task = asyncio.create_task(self.SOLANA.getAccountInfo(pool_info))
+        stake_info_task = asyncio.create_task(self.SOLANA.get_account_info(pool_info))
         stake_info = await stake_info_task
         if is_dual:
             # Dual reward
@@ -343,7 +345,7 @@ class RaydiumPoolInfo:
                 rewardB_decimal = self.LP_addresses[farm]['coin_decimals']
 
             stake_lp_pool = self.farms_info[farm]['poolLpTokenAccount']
-            staked_lp_amount_task = asyncio.create_task(self.SOLANA.getTokenAccountBalance(stake_lp_pool))
+            staked_lp_amount_task = asyncio.create_task(self.SOLANA.get_token_account_balance(stake_lp_pool))
             staked_lp_amount_data = await staked_lp_amount_task
             staked_lp_amount = staked_lp_amount_data['result']['value']['uiAmount']
             staked_liquidity = staked_lp_amount * farm_lp_info['lp_share_price']
@@ -372,7 +374,7 @@ class RaydiumPoolInfo:
                 reward_decimal = self.LP_addresses[farm]['pc_decimals']
 
             stake_lp_pool = self.farms_info[farm]['poolLpTokenAccount']
-            staked_lp_amount_task = asyncio.create_task(self.SOLANA.getTokenAccountBalance(stake_lp_pool))
+            staked_lp_amount_task = asyncio.create_task(self.SOLANA.get_token_account_balance(stake_lp_pool))
             staked_lp_amount_data = await staked_lp_amount_task
             staked_lp_amount = staked_lp_amount_data['result']['value']['uiAmount']
             staked_liquidity = staked_lp_amount * farm_lp_info['lp_share_price']
@@ -393,7 +395,7 @@ class RaydiumPoolInfo:
             reward_decimal = self.LP_addresses[farm]['coin_decimals']
 
             stake_lp_pool = self.farms_info[farm]['poolLpTokenAccount']
-            staked_lp_amount_task = asyncio.create_task(self.SOLANA.getTokenAccountBalance(stake_lp_pool))
+            staked_lp_amount_task = asyncio.create_task(self.SOLANA.get_token_account_balance(stake_lp_pool))
             staked_lp_amount_data = await staked_lp_amount_task
             staked_lp_amount = staked_lp_amount_data['result']['value']['uiAmount']
             staked_liquidity = staked_lp_amount * farm_lp_info['lp_share_price']
@@ -413,7 +415,7 @@ class RaydiumPoolInfo:
         :return:
         """
         stake_program_id = STAKE_PROGRAM_ID
-        stake_distro_task = asyncio.create_task(self.SOLANA.getProgramAccounts(stake_program_id))
+        stake_distro_task = asyncio.create_task(self.SOLANA.get_program_accounts(stake_program_id))
         stake_distro_info = await stake_distro_task
 
         stake_result = stake_distro_info['result']
@@ -440,7 +442,7 @@ class RaydiumPoolInfo:
         :return:
         """
         stake_program_id = program_id
-        stake_distro_task = asyncio.create_task(self.SOLANA.getProgramAccounts(stake_program_id))
+        stake_distro_task = asyncio.create_task(self.SOLANA.get_program_accounts(stake_program_id))
         stake_distro_info = await stake_distro_task
 
         stake_result = stake_distro_info['result']
