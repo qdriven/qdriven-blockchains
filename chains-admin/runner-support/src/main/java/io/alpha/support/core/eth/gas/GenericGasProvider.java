@@ -53,12 +53,13 @@ public class GenericGasProvider implements ContractGasProvider {
     public BigInteger getGasLimit() {
         //不要修改,已经足够高 90_000/200_000/400_000
         //100_000:out-of-gas
-        //TODO: Getting historical gas limit data
+        //TODO: Getting historical gas limit data/ 1000_000*1000 * 10 9 次方 gwei
         if (this.name.equalsIgnoreCase(GasProviderFactory.GasUsageEnum.STANDARD.name())) {
             return BigInteger.valueOf(1000_000);
         } else {
             return BigInteger.valueOf(1500_000);
         }
+
     }
 
     /**

@@ -4,6 +4,7 @@ import lombok.Data;
 import xyz.erupt.annotation.EruptField;
 import xyz.erupt.annotation.sub_field.Edit;
 import xyz.erupt.annotation.sub_field.View;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
