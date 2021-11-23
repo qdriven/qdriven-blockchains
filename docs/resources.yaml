@@ -1,0 +1,12 @@
+repo-org:
+  - https://github.com/EthWorks
+  - https://github.com/bcnmy
+  - https://github.com/Tenderly
+
+projects:
+  - https://medium.com/biconomy
+  - https://docs.tenderly.co/
+  - https://techcrunch.com/
+
+jobs:
+  - https://gitcoin.co/onboard/contributor
