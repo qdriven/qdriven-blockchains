@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/binance-quantization" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bothway-grid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bscscan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/contract-two-way-grid-trends" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spot-trend-grid" vcs="Git" />
+  </component>
+</project>
