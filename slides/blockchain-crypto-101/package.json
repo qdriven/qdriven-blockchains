@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export  --timeout 60000 "
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.28.10",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*"
+  },
+  "name": "blockchain-crypto-101",
+  "devDependencies": {
+    "playwright-chromium": "^1.19.2"
+  }
+}

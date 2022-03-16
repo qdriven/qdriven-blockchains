@@ -1,0 +1,20 @@
+> curl https://hackernoon.com/hn-images/1\*EAbXfwFYzUdSSFGupchElg.png --output tx.png
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
+> curl https://hackernoon.com/hn-images/1\*K6Y0TFECphEhzaSQ84XDdw.png --output p2pnetwork.png
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+> curl https://cdn.hackernoon.com/hn-images/1\*x7xDjRQljgPVSRvV0VYEkg.png --output tx-block.png
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  256k    0  256k    0     0  29570      0 --:--:--  0:00:08 --:--:-- 42741
+> curl https://hackernoon.com/hn-images/1\*JFZIU7gHKVzDUlLmvvS5Zw.png --output blockhash.png
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+> curl https://hackernoon.com/hn-images/1\*r2-Pr7HNHpR2nbPRJf_vjA.png --output tx-block-struct.png
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
