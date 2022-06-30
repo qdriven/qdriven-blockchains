@@ -18,10 +18,10 @@ export default defineConfig({
         hookTimeout: timeout,
         globals: true,
         reporters: 'dot',
-        onConsoleLog(log) {
-            if (log.match(/experimental|jit engine|emitted file|tailwind/i))
-                return false
-        }
+        // onConsoleLog(log) {
+        //     if (log.match(/experimental|jit engine|emitted file|tailwind/i))
+        //         return false
+        // }
     },
     esbuild: {
         target: 'node14'
