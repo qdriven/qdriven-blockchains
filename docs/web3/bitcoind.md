@@ -12,3 +12,4 @@ Bitcoin was created in 2009 by Satoshi Nakamoto to be a “peer-to-peer electron
 - Single-purpose: Many holders just want it to be a token that stores value.
 
 Don't Trust, verify!
+

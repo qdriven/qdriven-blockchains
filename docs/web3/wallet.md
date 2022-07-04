@@ -26,3 +26,4 @@ You must never share your private key or seed phrase with anyone.
 ## How to Avoid Wallet scammers
 
 - https://www.odysseydao.com/articles/how-to-avoid-wallet-scams
+
