@@ -1,9 +1,23 @@
 {
-  "include": ["src"],
-  "exclude": ["**/*.spec.ts"],
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.tsx"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "node_modules",
+    ".husky",
+    "**/*.css",
+    "./tailwind.config.js",
+    "**/.yalc/",
+    "**/.yalc/**/*",
+    ".yalc/**/*"
+  ],
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
+    "declarationMap": true,
+    "declaration": true,
     "module": "ESNext",
     "lib": [
       "ESNext",
