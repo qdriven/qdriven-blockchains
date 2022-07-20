@@ -54,3 +54,10 @@ https://github.com/scaffold-eth/scaffold-eth-typescript
 https://learnblockchain.cn/article/4111
 https://hardhat.org/hardhat-runner/docs/getting-started#overview
 https://blog.coinbase.com/a-simple-guide-to-the-web3-stack-785240e557f0
+
+https://jonasgross.medium.com/education-in-blockchain-and-dlt-how-to-acquire-the-necessary-knowledge-in-10-days-42aed2afba7d
+https://widgets.weforum.org/blockchain-toolkit/consortium-formation/index.html
+https://abovethelaw.com/legal-innovation-center/2018/03/27/blockchain-in-practice-a-single-source-of-truth/
+https://prismlegal.com/blockchain-for-legal-demos-from-consortium-members/
+https://btlaw.com/insights/news/2019/blockchain-consortia-a-legal-roadmap-to-a-dynamically-changing-regulatory-landscape
+https://seraphin.legal/en/
