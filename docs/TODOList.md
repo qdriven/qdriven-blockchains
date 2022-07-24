@@ -61,3 +61,5 @@ https://abovethelaw.com/legal-innovation-center/2018/03/27/blockchain-in-practic
 https://prismlegal.com/blockchain-for-legal-demos-from-consortium-members/
 https://btlaw.com/insights/news/2019/blockchain-consortia-a-legal-roadmap-to-a-dynamically-changing-regulatory-landscape
 https://seraphin.legal/en/
+https://github.com/WeLightProject
+https://github.com/XChainLab/documentation.git
